@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import TodoList from "./components/TodoList";
-import NewTodo from "./components/NewTodo";
+import TodoList from "./components/TodoList/TodoList";
+import NewTodo from "./components/NewTodo/NewTodo";
 import { Todo } from "./todo.model";
 
 const App: React.FC = () => {
