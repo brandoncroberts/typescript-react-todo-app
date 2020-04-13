@@ -15,12 +15,14 @@ const NewTodo: React.FC<Props> = ({ onAddTodo }) => {
     let enteredText = textInputRef.current!.value;
 
     onAddTodo(enteredText);
+
+    textInputRef.current!.value = "";
   };
 
   return (
     <form onSubmit={todoSubmitHandler}>
       <div className="form-control">
-        <label htmlFor="todo-text">Todo Text</label>
+        <label htmlFor="todo-text">Enter Todo</label>
         <input type="text" name="" id="todo-text" ref={textInputRef} />
       </div>
       <button type="submit">ADD TODO</button>
